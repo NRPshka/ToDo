@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+}
+
+.set {
+    max-width: 1800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+input,
+button {
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    background-color: rgb(30, 30, 30);
+    font-family: 'Raleway', sans-serif;
+}
+
+.todoList h1 {
+    font-size: 48px;
+    color: antiquewhite;
+    text-align: left;
+}
+
+.todoList form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.inputEl {
+    width: 600px;
+    border: 2px solid transparent;
+    padding: 10px;
+    outline: none;
+    transition: .3s;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 4px;
+}
+
+.inputEl:hover {
+    border: 2px solid rgb(14, 95, 175);
+}
+
+.buttonEl {
+    width: 600px;
+    border: 2px solid transparent;
+    padding: 10px;
+    outline: none;
+    transition: .3s;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.todoList form .buttonEl:hover {
+    border: 2px solid rgb(14, 95, 175);
+    color: rgb(14, 95, 175);
+}
+
+.lists {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.done {
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: rgb(0, 180, 0);
+    cursor: pointer;
+    color: white;
+}
+
+.remove {
+    font-size: 14px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background-color: rgb(180, 0, 0);
+    cursor: pointer;
+    color: wheat;
+}
+
+.actions {
+    display: flex;
+    gap: 20px;
+}
+
+.list {
+    width: 600px;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+    background-color: rgb(225, 225, 225);
+    border-radius: 4px;
+
+}
+
+.list p {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+}
+
+.active {
+    border: 2px solid green;
+}
+
+.doneActive{
+    display: none;
+}
